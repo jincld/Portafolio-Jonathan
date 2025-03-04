@@ -38,3 +38,7 @@ body{
     font-size: 15px;
     background-color: #353535 !important;
 }
+
+.imgBanner{
+    width: 100%;
+}
