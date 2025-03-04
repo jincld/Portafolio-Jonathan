@@ -1,0 +1,30 @@
+.custom-navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: #000000b4 !important;
+    border-color: #000000b4 !important;
+    z-index:99999;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #bdbdbd !important;
+}
+
+.navspace{
+    margin-left: 30px;
+}
+
+body{
+    background-color: #000000;
+}
+
+.custom-footer {
+    background-color: #000000 !important;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sobre Mí</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="../img/loguito.png">
+        <link rel="stylesheet" href="../css/sobremi.css">
+        <script src="../js/footer.js" defer></script>
+        <script src="../js/menuPages.js" defer></script>
+      </head>
+      <body>
+    
+        <div id="menuContenedor"></div>
+    
+        <br>        
+        <br>        
+        <br>        
+        <br>             
+                <!-- Header-->
+                <header class="masthead text-center text-white">
+                    <div class="masthead-content">
+                        <div class="container px-5">
+                            <br>        
+                            <br>        
+                            <br>        
+                            <br>  
+                            <h1 class="masthead-heading mb-0 titulo">¿QUIÉN SOY?</h1>
+                            <br> 
+                            <h2 class="masthead-subheading mb-0 tituloDos">Hablemos sobre mi carerra</h2>
+                            <br> 
+                            <a class="btn btn-dark btn-xl" href="#scroll">Vamos allá</a>
+                        </div>
+                    </div>
+                    <div class="bg-circle-1 bg-circle"></div>
+                    <div class="bg-circle-2 bg-circle"></div>
+                    <div class="bg-circle-3 bg-circle"></div>
+                    <div class="bg-circle-4 bg-circle"></div>
+                </header>
+                <!-- Content section 1-->
+                <section id="scroll">
+                    <div class="container px-5">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-lg-6 order-lg-2">
+                                <div class="p-5"><img class="img-fluid rounded-circle" src="../img/fotoJon.png" alt="..." /></div>
+                            </div>
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="p-5">
+                                    <h2 class="display-4 tituloTres">¡Hola! Soy Jonathan</h2>
+                                    <p class="contenidoUno">Soy Jonathan, un desarrollador en aprendizaje. Me gusta incluir creatividad en mis proyectos para que logren destacar, disfruto de programar sitios web y me gustaría especializarme en desarrollo front-end.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Content section 2-->
+                <section>
+                    <div class="container px-5">
+                        <div class="row gx-5 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="p-5"><img class="img-fluid rounded-circle" src="../img/fotoAbout.png" alt="..." /></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <h2 class="display-4 tituloTres">¿Qué puedo hacer?</h2>
+                                    <p class="contenidoUno">Soy un desarrollador aún en estudios, se manejar lenguajes como Kotlin, JavaScript, HTML, CSS, XML, bases de datos como MongoDB, SQL-Relacional y herramientas como : GitHub yGitBash. Actualmente estoy aprendiendo a desarrollar utilizando la metodología MERN.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../Curriculum Jonathan Orellana.pdf" download="Currículum Jonathan Orellana" target="_blank" class="curriculum">
+                        <button class="btn btn-dark" href="../Curriculum Jonathan Orellana.pdf">Mi Currículum</button>
+                      </a>
+                </section>
+
+        <div id="footerContenedor"></div>
+
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    const offset = 100;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            </script>
+    
+        <script src="../js/cargarFooter.js" defer></script>
+        <script src="../js/cargarMenuPages.js" defer></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </body>
+</html>
